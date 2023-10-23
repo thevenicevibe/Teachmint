@@ -61,3 +61,32 @@ li a {
 .country-selector {
   margin-top: 20px;
 }
+
+.container-profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.class-third{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+
