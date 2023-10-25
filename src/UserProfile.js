@@ -33,8 +33,8 @@ function UserProfile() {
   }, [userId]);
 
   useEffect(() => {
-    if (selectedCountry) {
-      axios
+    debugger
+    axios
         .get(`http://worldtimeapi.org/api/timezone/${selectedCountry}`)
         .then((response) => {
           if (Array.isArray(response.data)) {
@@ -48,7 +48,9 @@ function UserProfile() {
         .catch((error) => {
           console.error("Error fetching current time:", error);
         });
-    }
+    // if (selectedCountry) {
+      
+    // }
   }, [selectedCountry]);
 
   return (
@@ -90,11 +92,11 @@ function UserProfile() {
         
         <div className="user-address">
           <p>Address:</p>
-          <p>{user.address.street}</p>
+          {/* <p>{user.address.street}</p>
           <p>{user.address.suite}</p>
           <p>{user.address.city}</p>
           <p>{user.address.zipcode}</p>
-          <p>Geo: {user.address.geo ? `${user.address.geo.lat}, ${user.address.geo.lng}` : ''}</p>
+          <p>Geo: {user.address.geo ? `${user.address.geo.lat}, ${user.address.geo.lng}` : ''}</p> */}
           <p>User {user.email}</p>
           <p>Phone {user.phone}</p>
         </div>
